@@ -11,25 +11,25 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_47 = function() {
-	this.initialize(img.CachedTexturedBitmap_47);
+(lib.CachedTexturedBitmap_26 = function() {
+	this.initialize(img.CachedTexturedBitmap_26);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,3847,508);
 
 
-(lib.CachedTexturedBitmap_49 = function() {
-	this.initialize(img.CachedTexturedBitmap_49);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,3849,510);
-
-
-(lib.CachedTexturedBitmap_51 = function() {
-	this.initialize(img.CachedTexturedBitmap_51);
+(lib.CachedTexturedBitmap_27 = function() {
+	this.initialize(img.CachedTexturedBitmap_27);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,6797,610);
 
 
-(lib.CachedTexturedBitmap_52 = function() {
+(lib.CachedTexturedBitmap_28 = function() {
+	this.initialize(img.CachedTexturedBitmap_28);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,3849,510);
+
+
+(lib.CachedTexturedBitmap_29 = function() {
 	this.initialize(ss["FOFOSKY_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -63,7 +63,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
-	this.instance = new lib.CachedTexturedBitmap_51();
+	this.instance = new lib.CachedTexturedBitmap_27();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.1759,0.1759);
 
@@ -90,7 +90,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1195.3,107.3);
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
-	this.instance = new lib.CachedTexturedBitmap_47();
+	this.instance = new lib.CachedTexturedBitmap_26();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.5,0.5);
 
@@ -198,7 +198,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.instance.parent = this;
 	this.instance.setTransform(-0.05,241.35,1,1,0,0,0,597.6,53.6);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_52();
+	this.instance_1 = new lib.CachedTexturedBitmap_29();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(-192.95,-320.7,0.5,0.5);
 
@@ -208,7 +208,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.instance_2.filters = [new cjs.ColorFilter(0.5, 0.5, 0.5, 1, 107, 0, 107, 0)];
 	this.instance_2.cache(-2,-2,1928,258);
 
-	this.instance_3 = new lib.CachedTexturedBitmap_49();
+	this.instance_3 = new lib.CachedTexturedBitmap_28();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(-958.05,-394.5,0.5,0.5);
 
@@ -239,9 +239,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"CachedTexturedBitmap_47.png", id:"CachedTexturedBitmap_47"},
-		{src:"CachedTexturedBitmap_49.png", id:"CachedTexturedBitmap_49"},
-		{src:"CachedTexturedBitmap_51.png", id:"CachedTexturedBitmap_51"},
+		{src:"CachedTexturedBitmap_26.png", id:"CachedTexturedBitmap_26"},
+		{src:"CachedTexturedBitmap_27.png", id:"CachedTexturedBitmap_27"},
+		{src:"CachedTexturedBitmap_28.png", id:"CachedTexturedBitmap_28"},
 		{src:"FOFOSKY_atlas_.png", id:"FOFOSKY_atlas_"}
 	],
 	preloads: []
