@@ -9,7 +9,7 @@
 -->
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>FOFOSKY</title>
 <!-- write your code here -->
@@ -93,12 +93,30 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
-</head>
-<body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1080px">
-		<canvas id="canvas" width="1920" height="1080" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div>
+<style type="text/css">
+body,td,th {
+    font-size: medium;
+}
+</style>
+<head><link rel="shortcut icon" href="/logo.ico" /></head>
+<body onload="init();" style="margin-bottom: 0px; margin-left: auto; margin-right: 0px; margin-top: 0px;">
+	<div id="animation_container" style="background-color: rgba(255,255,255,1.00); width: 1920px; height: 500px">
+<canvas height="1080" width="1920" id="canvas" style="text-align: center"></canvas>
+<div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 1920px; height: 1080px; position: absolute; left: 0px; top: 0px; display: block; right: 0px; bottom: 0px;">
+</div>
 	</div>
-</body>
+<div class="video"style="width: 1920px; background-color: #000000;" >
+  <div class="thumbnail"style="width: 640px; padding-top: 0px; padding-right: 250px; padding-left: 0px; padding-bottom: 0px; float: right;">
+    <video width="800" height="600" poster="video/BVN.png" controls="controls" >
+      <source src="video/BVN.mp4" type="video/mp4">
+    </video>
+  </div>
+	<div class="thumbnail"style="width: 640px; padding-top: inherit; padding-right: inherit; padding-left: 100px; padding-bottom: inherit;">
+  <video width="800" height="600" poster="video/1.jpg" controls="controls" >
+      <source src="video/bleach.mp4" type="video/mp4">
+</video>
+  </div>
+</div>
+
+</body>	
 </html>
