@@ -11,29 +11,35 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_1 = function() {
-	this.initialize(img.CachedTexturedBitmap_1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,3847,508);
-
-
-(lib.CachedTexturedBitmap_2 = function() {
-	this.initialize(img.CachedTexturedBitmap_2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,6797,610);
-
-
-(lib.CachedTexturedBitmap_3 = function() {
-	this.initialize(img.CachedTexturedBitmap_3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,3849,510);
-
-
 (lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["FOFOSKY_atlas_"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
+
+
+(lib.CachedTexturedBitmap_5 = function() {
+	this.initialize(img.CachedTexturedBitmap_5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,3847,508);
+
+
+(lib.CachedTexturedBitmap_6 = function() {
+	this.initialize(img.CachedTexturedBitmap_6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,6797,610);
+
+
+(lib.CachedTexturedBitmap_7 = function() {
+	this.initialize(img.CachedTexturedBitmap_7);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,3849,510);
+
+
+(lib.CachedTexturedBitmap_8 = function() {
+	this.initialize(img.CachedTexturedBitmap_8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,3827,1658);
 
 
 (lib.资源4 = function() {
@@ -59,11 +65,25 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
+(lib.元件9 = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+
+	// 图层_1
+	this.instance = new lib.CachedTexturedBitmap_8();
+	this.instance.parent = this;
+	this.instance.setTransform(-0.5,-0.5,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,1913.5,829);
+
+
 (lib.元件5 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
-	this.instance = new lib.CachedTexturedBitmap_2();
+	this.instance = new lib.CachedTexturedBitmap_6();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.1759,0.1759);
 
@@ -90,7 +110,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1195.3,107.3);
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
-	this.instance = new lib.CachedTexturedBitmap_1();
+	this.instance = new lib.CachedTexturedBitmap_5();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.5,0.5);
 
@@ -98,6 +118,20 @@ p.nominalBounds = new cjs.Rectangle(0,0,1195.3,107.3);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,1923.5,254);
+
+
+(lib.元件10 = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+
+	// 图层_1
+	this.instance = new lib.元件9("synched",0);
+	this.instance.parent = this;
+	this.instance.setTransform(0,0,1,1,0,0,0,956.2,414.1);
+	this.instance.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.元件10, new cjs.Rectangle(-956.7,-414.6,1913.5,829), null);
 
 
 (lib.元件4 = function(mode,startPosition,loop) {
@@ -139,7 +173,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,172.4,174.4);
 
 
 (lib.元件6 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
 	this.instance = new lib.元件1();
@@ -152,7 +186,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 
 (lib.元件7 = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+	this.initialize(mode,startPosition,loop,{});
 
 	// 图层_1
 	this.instance = new lib.元件6();
@@ -167,7 +201,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.bf.filters = [new cjs.BlurFilter(10, 10, 3)];
 	this.bf.cache(-2,-2,172,174);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.bf}]},1).to({state:[{t:this.bf}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.bf}]},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:true},1).wait(2));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-14,-14,200,202);
@@ -207,7 +242,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.instance_2.filters = [new cjs.ColorFilter(0.5, 0.5, 0.5, 1, 107, 0, 107, 0)];
 	this.instance_2.cache(-2,-2,1928,258);
 
-	this.instance_3 = new lib.CachedTexturedBitmap_3();
+	this.instance_3 = new lib.CachedTexturedBitmap_7();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(-958.05,-394.5,0.5,0.5);
 
@@ -220,6 +255,28 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 (lib.MYWEB = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
+	// timeline functions:
+	this.frame_0 = function() {
+		/* 	Load a Video
+			Change the URL below.
+		*/
+		var videoURL = "https://images-tv.adobe.com/avp/vr/15a99ccf-0e7c-4601-b270-87dd82624086/5078a43c-81f9-4a93-836c-815278b83a8e/e9cf12a0-7c4b-414f-a5c9-97ef49340aa9_20160203035417.960x540at1200_h264.mp4";
+		
+		this.movieClip_3.on("added", function() {
+		    $("#movieClip_3")[0].src = videoURL;
+		}, this, true);
+		
+		/* 播放视频
+		使用此代码片段可播放选定视频。
+		*/
+		this.movieClip_3.on("added", function() {
+		    $("#movieClip_3")[0].play();
+		}, this, true);
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// 图层_1
 	this.instance = new lib.元件8("synched",0);
 	this.instance.parent = this;
@@ -227,8 +284,16 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
+	// 图层_2
+	this.movieClip_3 = new lib.元件10();
+	this.movieClip_3.name = "movieClip_3";
+	this.movieClip_3.parent = this;
+	this.movieClip_3.setTransform(960.25,666.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.movieClip_3).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(214.4,535.5,2438.4,248.39999999999998);
+p.nominalBounds = new cjs.Rectangle(214.4,535.5,2438.4,545.0999999999999);
 // library properties:
 lib.properties = {
 	id: 'D7BD4A6FB1047F44863CD44F77FED017',
@@ -238,9 +303,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"CachedTexturedBitmap_1.png", id:"CachedTexturedBitmap_1"},
-		{src:"CachedTexturedBitmap_2.png", id:"CachedTexturedBitmap_2"},
-		{src:"CachedTexturedBitmap_3.png", id:"CachedTexturedBitmap_3"},
+		{src:"CachedTexturedBitmap_5.png", id:"CachedTexturedBitmap_5"},
+		{src:"CachedTexturedBitmap_6.png", id:"CachedTexturedBitmap_6"},
+		{src:"CachedTexturedBitmap_7.png", id:"CachedTexturedBitmap_7"},
+		{src:"CachedTexturedBitmap_8.png", id:"CachedTexturedBitmap_8"},
 		{src:"FOFOSKY_atlas_.png", id:"FOFOSKY_atlas_"}
 	],
 	preloads: []
